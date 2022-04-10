@@ -31,7 +31,9 @@ const ArtGallery = () => {
           {[images.Artgallery01, images.Artgallery02, images.Artgallery03, images.Artgallery04,images.Artgallery05,images.Artgallery06,images.Artgallery07].map((image, index) => (
             <div className="app__gallery-images_card flex__center" key={`gallery_image-${index + 1}`}>
               <img src={image} alt="gallery_image" />
-              <BsInstagram className="gallery__image-icon" />
+              <a className="gallery__image-icon" href="https://www.instagram.com/churchuli_official/">
+                <BsInstagram className="gallery__image-icon" />
+              </a>
             </div>
           ))}
         </div>

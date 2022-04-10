@@ -44,6 +44,18 @@
     }
 }
 
+@media screen and (max-width: 650px) {
+    .app__chef-sign img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .app__chef-sign img {
+        width: 180px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .app__chef-sign img {
         width: 100px;

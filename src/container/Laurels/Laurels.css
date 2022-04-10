@@ -34,9 +34,14 @@
     margin-left: 1rem;
 }
 
+@media screen and (max-width: 1150px) {
+    .app__wrapper_laurels img{
+        display: none;
+    }
+}
 @media screen and (max-width: 450px) {
     .app__laurels_awards-card {
         min-width: 100%;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
     }
 }

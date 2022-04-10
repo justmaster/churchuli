@@ -138,8 +138,23 @@
         min-width: 100%;
     }
 
-    .app__gallery-images_card {
+    .app__gallery-images_card { 
         min-width: 240px;
         height: 320px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .app__gallery {
+        padding: 3rem 0 3rem 1.5rem;
+    }  
+    
+    .app__gallery-content {
+        min-width: 95%;
+    }
+
+    .app__gallery-images_card {
+        min-width: 220px;
+        height: 300px;
     }
 }

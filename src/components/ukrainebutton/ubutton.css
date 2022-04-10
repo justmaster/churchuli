@@ -1,0 +1,102 @@
+.buttonDoubleGradient {
+    background: -webkit-linear-gradient(#004bf9 50%, #fff704 50%);
+    background: -o-linear-gradient(#004bf9 50%, #fff704 50%); 
+    background: -moz-linear-gradient(#004bf9 50%, #fff704 50%);  
+    background: linear-gradient(#004bf9 50%, #fff704 50%);  
+    border: 0.5px solid #ffffff;
+    border-radius: 3px;
+    padding: 13px 0px;
+    width: 220px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .buttonDoubleGradient a{
+    color: #000000;
+    font-weight: 700;
+    font-family: Raleway;
+    font-size: 21px;
+  }
+  .buttonDoubleGradient:hover{
+
+    cursor: pointer;
+    background: transparent;
+    background: transparent;
+    background: transparent ;
+    background: transparent;
+  }
+
+  .buttonDoubleGradient:hover a{
+    color: white;
+  }
+
+  
+@media screen and (min-width: 2000px) {
+    .buttonDoubleGradient {
+        padding: 20px 0px;
+        width: 300px;
+      }
+
+      .buttonDoubleGradient a{
+        font-size: 27px;
+      }
+
+}
+
+@media screen and (max-width: 1150px) {
+
+}
+
+@media screen and (max-width: 650px) {
+    .buttonDoubleGradient {
+        padding: 11px 0px;
+        width: 180px;
+      }
+
+      .buttonDoubleGradient a{
+        font-size: 19px;
+      }
+}
+
+@media screen and (max-width: 500px) {
+    .buttonDoubleGradient {
+        padding: 9px 0px;
+        width: 120px;
+      }
+
+      .buttonDoubleGradient a{
+        font-size: 12px;
+      }
+}
+
+@media screen and (max-width: 450px) {
+    .buttonDoubleGradient {
+        padding: 8px 0px;
+        width: 115px;
+      }
+
+      .buttonDoubleGradient a{
+        font-size: 11px;
+      }
+}
+
+@media screen and (max-width: 350px) {
+    .buttonDoubleGradient {
+        padding: 7px 0px;
+        width: 105px;
+      }
+
+      .buttonDoubleGradient a{
+        font-size: 11px;
+      }
+}
+
+@media screen and (max-width: 300px) {
+    .buttonDoubleGradient {
+        padding: 7px 0px;
+        width: 100px;
+      }
+
+      .buttonDoubleGradient a{
+        font-size: 8px;
+      }
+}
