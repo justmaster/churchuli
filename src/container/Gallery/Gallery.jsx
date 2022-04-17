@@ -2,11 +2,20 @@ import React from 'react';
 import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 
 import { SubHeading } from '../../components';
-import { images } from '../../constants';
+import { data, images } from '../../constants';
+import { useParams }from "react-router-dom";
 import './Gallery.css';
 
 const Gallery = () => {
   const scrollRef = React.useRef(null);
+
+  const { langId } = useParams();
+  const GalleryEng = data.GalleryEng
+  const GalleryRus = data.GalleryRus
+  const GalleryGeo = data.GalleryGeo
+  const content = langId === "eng" ? GalleryEng : langId ==="geo" ? GalleryGeo : GalleryRus  
+
+
 
   const scroll = (direction) => {
     const { current } = scrollRef;
@@ -22,9 +31,9 @@ const Gallery = () => {
     <div className="app__gallery flex__center">
       <div className="app__gallery-content">
         <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">Photo Gallery</h1>
-        <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>Visit Our Instagram</p>
-        <a href="https://www.instagram.com/churchuli_official/"type="button" className="custom__button">View More</a>
+        <h1 className="headtext__cormorant">{content[0].gallery}</h1>
+        <p className="p__opensans" style={{ color: '#AAAAAA', marginTop: '2rem' }}>{content[0].visit}</p>
+        <a href="https://www.instagram.com/churchuli_official/"type="button" className="custom__button">{content[0].button}</a>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images_container" ref={scrollRef}>

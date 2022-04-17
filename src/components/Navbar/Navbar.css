@@ -30,43 +30,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     list-style: none;
 }
 
 .app__navbar-links li {
     margin: 0 1rem;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .app__navbar-links li:hover {
     color: var(--color-grey);
+    text-decoration: none;
 }
 
 .app__navbar-supportua {
     align-self: center;
     margin: 0 10vw 0 0;
 }
+
 .app__navbar-login {
+    width: fit-content;
+    margin-right: 0%;
+    /* border: 1px solid red; */
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.app__navbar-login a {
-    margin: 0 1rem;
+.app__navbar-login-book {
+    margin: 0 1% 0 1%;
+    color:white;
+    cursor: pointer;
     text-decoration: none;
-    transition: .5s ease;
+    align-self: center;
+    transition: .4s ease;
+    font-family: raleway;
+    font-size: 1rem;
 }
 
 .app__navbar-login a:hover {
+    color: goldenrod;
+    text-decoration: none;
     border-bottom: 1px solid var(--color-golden);
 }
 
-.app__navbar-login div {
-    width: 1px;
-    height: 30px;
-    background: var(--color-grey);
+
+.app__navbar-langbar{
+    border-right: solid 0.1px var(--color-golden);
+    /* margin-right: 1%; */
+
+}
+
+.app__navbar-langbar span{
+ margin: 5%;
+ color: white;
+ font-family: raleway;
+ font-size: 1em;
+ text-transform: uppercase;
 }
 
 .app__navbar-smallscreen {
@@ -106,10 +129,30 @@
     font-size: 2rem;
     text-align: center;
     font-family: var(--font-base);
+    color: white;
+    text-decoration: none;
 }
+
 
 .app__navbar-smallscreen_links li:hover {
     color: var(--color-white);
+}
+
+.app__navbar-langContainer{
+    position: relative;
+    align-self: center;
+}
+.app__navbar-langSwitcher {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    align-self: center;
+    position: absolute;
+    width: 2rem;
+}
+
+.app__navbar__lang-button{
+    color: white;
 }
 
 @media screen and (min-width: 2000px) {
@@ -133,20 +176,27 @@
         padding: 1rem;
     }
 
-    .app__navbar-login {
-        display: none;
-    }
-
     .app__navbar-logo img {
-        width: 140px;
+        width: 120px;
     }
-
     
     .app__navbar-logo img:hover {
-        width: 160px;
+        width: 140px;
     }
     .app__navbar-supportua {
-        align-self: center;
-        margin: 0 3vw 0 0;
+        display: none;
+    }
+    .app__navbar-login a {
+        font-size: 0.8rem;
+    }
+
+    .app__navbar-langbar span{
+        font-size: 0.8rem;
+       }  
+}
+
+@media screen and (max-width: 300px) {
+    .app__navbar-logo img {
+        display: none;
     }
 }

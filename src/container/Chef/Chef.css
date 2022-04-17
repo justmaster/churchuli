@@ -34,7 +34,7 @@
 }
 
 .app__chef-sign img {
-    width: 250px;
+    width: 150px;
     margin-top: 3rem;
 }
 
@@ -46,13 +46,13 @@
 
 @media screen and (max-width: 650px) {
     .app__chef-sign img {
-        width: 200px;
+        width: 130px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .app__chef-sign img {
-        width: 180px;
+        width: 120px;
     }
 }
 

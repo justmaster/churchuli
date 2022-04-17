@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { SubHeading } from '../../components';
-import { images, data } from '../../constants';
+import { data, images } from '../../constants';
+import { useParams }from "react-router-dom";
 import './Laurels.css';
 
 const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
@@ -14,11 +15,19 @@ const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
   </div>
 );
 
-const Laurels = () => (
+const Laurels = () => {
+  const { langId } = useParams();
+  const LaurelsEng = data.LaurelsEng
+  const LaurelsRus = data.LaurelsRus
+  const LaurelsGeo = data.LaurelsGeo
+  const content = langId === "eng" ? LaurelsEng : langId ==="geo" ? LaurelsGeo : LaurelsRus  
+
+  
+return(
   <div className="app__bg app__wrapper section__padding" id="awards">
     <div className="app__wrapper_info">
-      <SubHeading title="Awards & recognition" />
-      <h1 className="headtext__cormorant">Our Reviews</h1>
+      <SubHeading title={content[0].awards} />
+      <h1 className="headtext__cormorant">{content[0].reviews}</h1>
 
       <div className="app__laurels_awards">
         {data.awards.map((award) => <AwardCard award={award} key={award.title} />)}
@@ -29,6 +38,6 @@ const Laurels = () => (
       <img src={images.church} alt="laurels_img" />
     </div>
   </div>
-);
+)};
 
 export default Laurels;

@@ -5,17 +5,21 @@
     background: linear-gradient(#004bf9 50%, #fff704 50%);  
     border: 0.5px solid #ffffff;
     border-radius: 3px;
-    padding: 13px 0px;
-    width: 220px;
+    padding: 10px 0px;
+    width: 190px;
     text-align: center;
     margin-bottom: 0px;
   }
   .buttonDoubleGradient a{
     color: #000000;
-    font-weight: 700;
+    font-weight: 750;
     font-family: Raleway;
-    font-size: 21px;
+    font-size: 17px;
+    text-decoration: none;
+    box-shadow: none;
   }
+
+
   .buttonDoubleGradient:hover{
 
     cursor: pointer;
@@ -42,25 +46,33 @@
 
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
+  .buttonDoubleGradient {
+    padding: 10px 0px;
+    width: 180px;
+  }
+
+  .buttonDoubleGradient a{
+    font-size: 15px;
+  }
 
 }
 
 @media screen and (max-width: 650px) {
     .buttonDoubleGradient {
-        padding: 11px 0px;
+        padding: 9px 0px;
         width: 180px;
       }
 
       .buttonDoubleGradient a{
-        font-size: 19px;
+        font-size: 15px;
       }
 }
 
 @media screen and (max-width: 500px) {
     .buttonDoubleGradient {
-        padding: 9px 0px;
-        width: 120px;
+        padding: 7px 0px;
+        width: 130px;
       }
 
       .buttonDoubleGradient a{
@@ -70,33 +82,33 @@
 
 @media screen and (max-width: 450px) {
     .buttonDoubleGradient {
-        padding: 8px 0px;
-        width: 115px;
+        padding: 9px 0px;
+        width: 160px;
       }
 
       .buttonDoubleGradient a{
-        font-size: 11px;
+        font-size: 15px;
       }
 }
 
 @media screen and (max-width: 350px) {
     .buttonDoubleGradient {
-        padding: 7px 0px;
-        width: 105px;
+        padding: 8px 0px;
+        width: 150px;
       }
 
       .buttonDoubleGradient a{
-        font-size: 11px;
+        font-size: 13px;
       }
 }
 
 @media screen and (max-width: 300px) {
     .buttonDoubleGradient {
         padding: 7px 0px;
-        width: 100px;
+        width: 120px;
       }
 
       .buttonDoubleGradient a{
-        font-size: 8px;
+        font-size: 10px;
       }
 }

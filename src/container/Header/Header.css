@@ -8,23 +8,39 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     line-height: 117px;
-    font-size: 90px;
+    font-size: 82px;
 }
 
 .app__header-img img {
     width: 80%;
 }
 
+.app__header-supportua {
+    display: none;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
 @media screen and (max-width: 650px) {
     .app__header-h1 {
         line-height: 85px;
-        font-size: 60px;
+        font-size: 55px;
+    }
+    .app__header-supportua {
+        display: block;
     }
 }
 
 @media screen and (max-width: 450px) {
     .app__header-h1 {
-        line-height: 85px;
-        font-size: 45px;
+        line-height: 83px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .app__header-h1 {
+        line-height: 60px;
+        font-size: 20px;
     }
 }
