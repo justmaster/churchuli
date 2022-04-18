@@ -22,7 +22,7 @@ return(
         <p className="p__opensans">{content[0].Monfr}</p>
         <p className="p__opensans">{content[0].StSn}</p>
       </div>
-      <a href="https://www.google.com/maps/place/Churchuli+bar/@41.7078028,44.7708707,17z/data=!3m1!4b1!4m5!3m4!1s0x40440ddbeacf3cb3:0x54e3d23dc17179ce!8m2!3d41.7077988!4d44.7730594"type="button" className="custom__button">Visit Us</a>
+      <a href="https://www.google.com/maps/place/Churchuli+bar/@41.7078028,44.7708707,17z/data=!3m1!4b1!4m5!3m4!1s0x40440ddbeacf3cb3:0x54e3d23dc17179ce!8m2!3d41.7077988!4d44.7730594"type="button" className="custom__button">{content[0].button}</a>
 
     </div>
 
