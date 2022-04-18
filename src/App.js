@@ -3,8 +3,6 @@ import Main from './main';
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
 
-
-
 const App = () => {
 
 

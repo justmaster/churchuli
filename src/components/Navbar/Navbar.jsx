@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import '@coreui/coreui/dist/css/coreui.min.css'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {MdOutlineMenu} from "react-icons/md"
@@ -10,6 +10,9 @@ import { useParams, useNavigate} from 'react-router-dom';
 import { CDropdown, CDropdownMenu, CDropdownItem, CDropdownToggle} from '@coreui/react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+
+
 const Navbar = () => {
   const { langId } = useParams();
   const navigate = useNavigate();
@@ -19,9 +22,7 @@ const Navbar = () => {
   const content = langId === "eng" ? NavbarEng : langId ==="geo" ? NavbarGeo : NavbarRus  
 
   const [toggleMenu, setToggleMenu] = useState(false);
-useEffect(() => {
-  console.log(content)
-}, [langId]);
+
   const setEnglish = () => {
     navigate(`/eng`)
   }
@@ -35,15 +36,17 @@ useEffect(() => {
   }
 
   const notify = () => {
-    toast.info(<a href="tel:+995 592 007 012">+995 592 007 012</a>, {
-      position: "top-right",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      });
+      toast.info(<a className='app__navbar-toast-phone' href="tel:+995 592 007 012">+995 592 007 012</a>, {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        icon: "📞",
+        theme: "dark",
+        });
   };
   return(
   <nav className="app__navbar">
@@ -73,7 +76,7 @@ useEffect(() => {
                   <CDropdownItem onClick={()=> setRussian()} href="#">RUS</CDropdownItem>
                 </CDropdownMenu>
       </CDropdown>
-      <a className='app__navbar-login-book' onClick={notify}>{content[0].table}</a>
+      <a className='app__navbar-login-book' href={null} onClick={notify}>{content[0].table}</a>
     </div>
 
 

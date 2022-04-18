@@ -133,7 +133,37 @@
   width: 45px;
 }
 
+.Toastify__progress-bar {
+  background-color: var(--color-golden);
 
+}
+.Toastify__progress-bar--rtl {
+  background-color: var(--color-golden);
+
+}
+.Toastify__progress-bar-theme--light {
+  background-color: var(--color-golden);
+
+}
+.Toastify__progress-bar-theme--dark {
+  background-color: var(--color-golden);
+
+}
+.Toastify__progress-bar--info {
+  background-color: var(--color-golden);
+
+}
+.Toastify__progress-bar--success {
+  background-color: var(--color-golden);
+
+}
+.Toastify__progress-bar--warning {
+  background-color: var(--color-golden);
+
+}
+.Toastify__progress-bar--error {
+  background-color: var(--color-golden);
+}
 
 @media screen and (min-width: 2000px) {
   .custom__button,

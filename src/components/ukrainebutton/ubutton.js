@@ -4,7 +4,7 @@ import './ubutton.css'
 function Ubutton({text}) {
     return (
         <div className="buttonDoubleGradient">
-            <a  href="https://www.unicef.org/emergencies/war-ukraine-pose-immediate-threat-children">{text}</a>
+            <a  href="https://voices.org.ua/en/donat/">{text}</a>
         </div>
     );
 }

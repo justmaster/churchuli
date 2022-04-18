@@ -10,9 +10,6 @@ function Main() {
     const { langId } = useParams();
     const navigate = useNavigate();
 
-
-    
-
 useEffect(() => {
     const setEnglish = () => {
         langId ? console.log(null) : navigate(`/eng`)
@@ -25,17 +22,7 @@ useEffect(() => {
     return (
         <div>
             <Curtain />
-            <ToastContainer
-                position="top-right"
-                autoClose={5000}
-                hideProgressBar={false}
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                />
+            <ToastContainer/>
             <Navbar />
             <Header />
             <AboutUs />
